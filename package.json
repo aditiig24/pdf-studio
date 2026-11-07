@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "^6.5.438"
+    "pdfjs-dist": "^6.5.438",
+    "vite-plugin-pwa": "^2.0.0"
   }
 }
