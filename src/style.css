@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f6fa;
+  color: #252525;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 235px;
+  background: #a9271e;
+  color: white;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-bottom: 12px;
+}
+
+.offline {
+  color: #ffd6cf;
+  font-size: 12px;
+  margin-bottom: 35px;
+}
+
+.nav {
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav:hover,
+.nav.active {
+  background: #d64b3d;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.workspace {
+  flex: 1;
+  padding: 30px;
+  min-width: 0;
+}
+
+.topbar,
+.preview-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar p {
+  color: #777;
+  margin-top: 8px;
+}
+
+.status {
+  color: #25864b;
+  background: #e2f5e9;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.upload-section {
+  background: white;
+  text-align: center;
+  padding: 35px 15px;
+  margin-top: 30px;
+  border: 2px dashed #e1b1ac;
+  border-radius: 12px;
+}
+
+.upload-icon {
+  font-size: 40px;
+}
+
+.upload-section h2 {
+  margin: 12px;
+}
+
+.upload-section p {
+  color: #777;
+  margin: 12px;
+}
+
+#pdfUpload {
+  display: none;
+}
+
+.upload-button {
+  display: inline-block;
+  background: #b52d23;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.toolbar,
+.preview-section {
+  background: white;
+  padding: 22px;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tools button {
+  padding: 11px 17px;
+  background: #fff4f2;
+  color: #a9271e;
+  border: 1px solid #f0d0cb;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tools button:hover {
+  background: #a9271e;
+  color: white;
+}
+
+#saveButton {
+  background: #b52d23;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.preview {
+  margin-top: 20px;
+  min-height: 350px;
+  background: #f1f2f5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview iframe {
+  display: block;
+  border: none;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 100px 10px;
+  color: #777;
+}
+
+.empty-state div {
+  font-size: 45px;
+}
+
+.empty-state h3 {
+  margin: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .workspace {
+    padding: 15px;
+  }
+
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
